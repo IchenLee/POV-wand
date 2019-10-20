@@ -1,0 +1,36 @@
+int highTime=0;//time @ right end
+int lowTime=0;//time @ left end
+bool lowChange=false;//true if lowTime has changed
+bool highChange=false;//true if highTime has changed
+int halfCycleTime=42;//time it takes to complete a half cycle, it is 42 because 7 letters*6 lines per letter and the initilized should be 1 milisecond
+int delayInterval=1;//the amount of time initialized in miliseconds it takes per run
+int previousTime=0;//holds the previous time to calculate elapsed time
+   
+void delayTime(){
+  int accelData = A1;//take in accelorometer data
+  if(accelData>550){//if stick on the right end
+    highChange=true;
+    highTime=millis();//set the time to that current time
+  }
+  if(accelData<400){//if stick on the right end
+    lowChange=true;
+    lowTime=millis();//set the time to that current time
+  }
+  if(lowChange&&highChange){//only if both times have updated
+    if(lowTime>=highTime){//absoulute value if statements
+      halfCycleTime=lowTime-highTime;
+    }else{
+      halfCycleTime=highTime-lowTime;
+    }
+    lowChange=false;//change both back to false
+    highChange=false;
+    delayInterval=halfCycleTime/42;//divide the half cycle by the total number of lines in the word
+  }
+}
+//put inside loop function, instead of using delay------------------------------------------------
+if(currentTime-previousTime>=delayInterval){//runs the inside code every delayInterval amount in miliseconds
+  previousTime=currentTime;
+  //rest of the code
+}
+delayTime();//updates the delayInterval
+//put inside loop function-----------------------------------------------------------------------
