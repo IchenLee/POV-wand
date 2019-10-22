@@ -83,10 +83,10 @@ void loop() {
   // Character Arrays
   int i=0; 
   int acc = analogRead(A1);
-  if(acc=0){
+  if(acc==0){
     direct = !direct;
   }
-  if (direct){
+  if (direct){//put into the loop maybe?
     for(i=0;i<7;i++){
           letter_to_LED(str[i]);
           delay(4);
