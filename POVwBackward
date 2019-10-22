@@ -69,7 +69,7 @@ void letter_to_LED_backward(int *character){
           character[j]=charBackward[k];
           k++;
     }
-    for(col=0;col<5;col++){
+    for(col=0;col<6;col++){
       while(i < 10){
         digitalWrite(i,character[pos]);
         i=i+1;
