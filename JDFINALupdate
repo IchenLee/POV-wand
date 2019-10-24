@@ -1,0 +1,164 @@
+ 
+//pulled off the arrays from arduino website
+int _[] = {0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0};
+int A[] = {1,1,1,1,1,1,1,1, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 1,1,1,1,1,1,1,1, 0,0,0,0,0,0,0,0};
+int B[] = {1,1,1,1,1,1,1,1, 1,0,0,1,0,0,0,1, 1,0,0,1,0,0,0,1, 1,0,0,1,0,0,0,1, 0,1,1,0,1,1,1,0, 0,0,0,0,0,0,0,0};
+int C[] = {0,0,1,1,1,1,0,0, 0,1,0,0,0,0,1,0, 1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+int D[] = {1,1,1,1,1,1,1,1, 1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 0,1,0,0,0,0,1,0, 0,0,1,1,1,1,0,0, 0,0,0,0,0,0,0,0};
+int E[] = {1,1,1,1,1,1,1,1, 1,0,0,1,0,0,0,1, 1,0,0,1,0,0,0,1, 1,0,0,1,0,0,0,1, 1,0,0,1,0,0,0,1, 0,0,0,0,0,0,0,0};
+int F[] = {1,1,1,1,1,1,1,1, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 0,0,0,0,0,0,0,0};
+int G[] = {0,1,1,1,1,1,1,1, 1,0,0,0,0,0,0,1, 1,0,0,0,1,0,0,1, 1,0,0,0,1,0,0,1, 1,0,0,0,1,1,1,0, 0,0,0,0,0,0,0,0};
+int H[] = {1,1,1,1,1,1,1,1, 0,0,0,0,1,0,0,0, 0,0,0,0,1,0,0,0, 0,0,0,0,1,0,0,0, 1,1,1,1,1,1,1,1, 0,0,0,0,0,0,0,0};
+int I[] = {1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 1,1,1,1,1,1,1,1, 1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+int J[] = {0,0,0,0,0,1,1,0, 0,0,0,0,1,0,0,1, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,1, 1,1,1,1,1,1,1,0, 0,0,0,0,0,0,0,0};
+int K[] = {1,1,1,1,1,1,1,1, 0,0,0,1,1,0,0,0, 0,0,1,0,0,1,0,0, 0,1,0,0,0,0,1,0, 1,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+int L[] = {1,1,1,1,1,1,1,1, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+int M[] = {1,1,1,1,1,1,1,1, 0,1,0,0,0,0,0,0, 0,0,1,0,0,0,0,0, 0,1,0,0,0,0,0,0, 1,1,1,1,1,1,1,1, 0,0,0,0,0,0,0,0};
+int N[] = {1,1,1,1,1,1,1,1, 0,0,1,0,0,0,0,0, 0,0,0,1,1,0,0,0, 0,0,0,0,0,1,0,0, 1,1,1,1,1,1,1,1, 0,0,0,0,0,0,0,0};
+int O[] = {0,1,1,1,1,1,1,0, 1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 1,0,0,0,0,0,0,1, 0,1,1,1,1,1,1,0, 0,0,0,0,0,0,0,0};
+int P[] = {1,1,1,1,1,1,1,1, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 1,0,0,1,0,0,0,0, 0,1,1,0,0,0,0,0, 0,0,0,0,0,0,0,0};
+int Q[] = {0,1,1,1,1,1,1,0, 1,0,0,0,0,0,0,1, 1,0,0,0,0,1,0,1, 0,1,1,1,1,1,1,0, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+int R[] = {1,1,1,1,1,1,1,1, 1,0,0,1,1,0,0,0, 1,0,0,1,0,1,0,0, 1,0,0,1,0,0,1,0, 0,1,1,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+int S[] = {0,1,1,1,0,0,0,1, 1,0,0,0,1,0,0,1, 1,0,0,0,1,0,0,1, 1,0,0,0,1,0,0,1, 1,0,0,0,1,1,1,0, 0,0,0,0,0,0,0,0};
+int T[] = {1,0,0,0,0,0,0,0, 1,0,0,0,0,0,0,0, 1,1,1,1,1,1,1,1, 1,0,0,0,0,0,0,0, 1,0,0,0,0,0,0,0, 0,0,0,0,0,0,0,0};
+int U[] = {1,1,1,1,1,1,1,0, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,1, 0,0,0,0,0,0,0,1, 1,1,1,1,1,1,1,0, 0,0,0,0,0,0,0,0};
+int V[] = {1,1,1,1,1,1,0,0, 0,0,0,0,0,1,1,0, 0,0,0,0,0,0,0,1, 0,0,0,0,0,1,1,0, 1,1,1,1,1,1,0,0, 0,0,0,0,0,0,0,0};
+int W[] = {1,1,1,1,1,1,1,1, 0,0,0,0,0,0,1,0, 0,0,0,0,0,1,0,0, 0,0,0,0,0,0,1,0, 1,1,1,1,1,1,1,1, 0,0,0,0,0,0,0,0};
+int X[] = {1,1,0,0,0,0,1,1, 0,0,1,0,0,1,0,0, 0,0,0,1,1,0,0,0, 0,0,1,0,0,1,0,0, 1,1,0,0,0,0,1,1, 0,0,0,0,0,0,0,0};
+int Y[] = {1,1,0,0,0,0,0,0, 0,0,1,0,0,0,0,0, 0,0,0,1,1,1,1,1, 0,0,1,0,0,0,0,0, 1,1,0,0,0,0,0,0, 0,0,0,0,0,0,0,0};
+int Z[] = {1,0,0,0,0,1,1,1, 1,0,0,0,1,0,0,1, 1,0,0,1,0,0,0,1, 1,0,1,0,0,0,0,1, 1,1,0,0,0,0,0,1, 0,0,0,0,0,0,0,0};
+
+// variables used for timing
+int highTime=0;//time @ right end
+int lowTime=0;//time @ left end
+bool lowChange=false;//true if lowTime has changed
+bool highChange=false;//true if highTime has changed
+int halfCycleTime=42;//time it takes to complete a half cycle, it is 42 because 7 letters*6 lines per letter and the initilized should be 1 milisecond
+int delayInterval=1;//the amount of time initialized in miliseconds it takes per run
+int previousTime1=0;//holds the previous time in the letter to LED functions to calculate elapsed time
+int previousTime2=0;//holds the previous time in the main loop function to calculate elapsed time
+int currentTime=0;//holds the current time
+
+//variables used for displaying
+int *str[] = {V,O,L,C,A,N,O,_};//string to be displayed
+int adata;//accelormeter data
+bool direct=0;//direction if changed
+
+//setting up pins for input and output
+void setup() {
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(A1, INPUT);
+}
+
+
+//function delayTime() changes the delayInterval depending on swing speed
+void delayTime(){
+  int accelData = A1;//take in accelorometer data
+  if(accelData>450){//if stick on the right end
+    highChange=true;
+    highTime=millis();//set the time to that current time
+  }
+  if(accelData<300){//if stick on the right end
+    lowChange=true;
+    lowTime=millis();//set the time to that current time
+  }
+  if(lowChange&&highChange){//only if both times have updated
+    if(lowTime>=highTime){//absoulute value if statements
+      halfCycleTime=lowTime-highTime;
+    }else{
+      halfCycleTime=highTime-lowTime;
+    }
+    lowChange=false;//change both back to false
+    highChange=false;
+    delayInterval=halfCycleTime/42;//divide the half cycle by the total number of lines in the word
+  }
+}
+
+//converts the character from the arrays above to display on our LEDs
+void letter_to_LED(int *character){
+  int pos=0;
+  int col=0;
+  int i=9;
+    do{
+    //for(col=0;col<6;col++){
+      delayTime();      //Calls our delay function to generate the delay between each character
+      currentTime = millis();
+      if(currentTime-previousTime1>=delayInterval){ //only runs if the amount of time delayInterval happens 
+        previousTime1=currentTime;
+        while(i > 1){           // Beginning of our main loop; iterates through each row of our LED's
+                                // Reads the character array, sets the LED State
+          digitalWrite(i,character[pos] );
+          i=i-1;                // Decremenets our digital pins from D9 - D2
+          pos++;                //increments position in array
+        }
+        i=9;
+        col++;
+      }
+      //delay(1);
+      
+    }while(col<6);              //Repeats for each column in our letter
+      
+}
+
+void letter_to_LED_B(int *character){
+  int pos=39;
+  int col=0;
+  int i=2;
+    do{
+    //for(col=0;col<6;col++){
+      delayTime();      //Calls our delay function to generate the delay between each character
+      currentTime = millis();
+      if(currentTime-previousTime1>=delayInterval){//only runs if the amount of time delayInterval happens
+        previousTime1=currentTime;
+        while(i < 10){        // Beginning of our main loop; iterates through each row of our LED's
+                                // Reads the character array, sets the LED State
+          if(pos < 0){
+              digitalWrite(i,0);// Sets the first column equal to '0' for spacing    
+          }
+          else{
+              digitalWrite(i,character[pos]); //Otherwise, prints out value in our array
+          }
+          i=i+1;                //Because we are going backwards, the characters need to be read opposite of normal
+          pos--;                //Whcih is why we start from the back of the array and move up
+        }
+        i=2;
+        col++;
+      }
+      //delay(1);
+      
+    }while(col<6);
+      
+}
+
+void loop() {
+  int i=0;
+  do{
+  //for(i=0;i<7;i++){
+     adata = analogRead(A1);
+     currentTime=millis();
+     if(currentTime-previousTime2>=(delayInterval*4)){
+        previousTime2=currentTime;
+        if(adata<30 || adata>700){
+          direct = !direct;
+        }
+        
+        if(direct){
+           letter_to_LED_B(str[i]); 
+           i--;
+        }
+        else {
+           letter_to_LED(str[i]);
+           i++;
+        }
+     }
+          //delay(4);
+     delayTime();     
+  }while(i<8);
+}
