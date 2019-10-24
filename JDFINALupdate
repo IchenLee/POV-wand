@@ -140,25 +140,23 @@ void letter_to_LED_B(int *character){
 void loop() {
   int i=0;
   do{
-  //for(i=0;i<7;i++){
-     adata = analogRead(A1);
-     currentTime=millis();
+     adata = analogRead(A1);   //sets adata to current accelerometer data
+     currentTime=millis();  
      if(currentTime-previousTime2>=(delayInterval*4)){
         previousTime2=currentTime;
-        if(adata<30 || adata>700){
-          direct = !direct;
+        if(adata<30 || adata>700){  //Checks if accelerometer data is in a specific range
+          direct = !direct;         //Changes the "direction" of our words
         }
         
-        if(direct){
+        if(direct){                 //If it goes backwards, it calls the print backward function
            letter_to_LED_B(str[i]); 
            i--;
         }
         else {
-           letter_to_LED(str[i]);
+           letter_to_LED(str[i]);  //Otherwise, it prints normally
            i++;
         }
      }
-          //delay(4);
      delayTime();     
-  }while(i<8);
+  }while(i<8);         //Iterates for number of letters in our array
 }
